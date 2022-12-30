@@ -1,0 +1,126 @@
+<link rel="stylesheet" media="all" href="https://pokemontcg.guru/assets/application-99a75b25cefb947ba8898d9bb86f08d5ddab82581eb2fcf74eaa6afd82567df3.css" data-turbolinks-track="reload" />
+<div class="text-center">
+  <h2 style="margin-top: 10px">Vista en detalle de {{data.data.name}}</h2>
+  <div class="text-center" style="margin-top: 10px">
+    <img style="height: 300px" src="{{data.data.images.large}}">
+  </div>
+  <div style="margin:30px ">
+    <div class="content card-details">
+      <nav class="card-details_head level">
+        <div class="level-left">
+          <div class="level-item">
+<span class="title is-3">
+{{data.data.name}}
+<div class="title is-5 has-text-muted">
+{{data.data.supertype}} - {{data.data.subtypes}}
+</div>
+</span>
+          </div>
+        </div>
+        <div class="level-right">
+          <div class="level-item">
+<span class="title is-5 is-flex is-align-items-center">
+ <span class="mr-2">NIVEL: {{data.data.hp}}</span>
+</span>
+          </div>
+        </div>
+      </nav>
+      <hr>
+
+      <hr class="mb-0">
+      <section style="background: greenyellow">
+        <p class="heading">Ataques:</p>
+        <table >
+          <tbody class="card-details_attack" *ngFor="let ataque of data.data.attacks" >
+          <tr style="background: coral">
+            <td class="attack-name">
+              <span class="title is-4">{{ataque.name}}</span>
+            </td>
+            <td>
+              <span class="title is-4 is-muted nowrap">DAÑO: {{ataque.damage}}</span>
+            </td>
+          </tr>
+          <tr style="background: darkkhaki">
+            <td colspan="3">
+              <p> Decripcion del ataque: {{ataque.text}}</p>
+            </td>
+          </tr>
+          </tbody></table>
+      </section>
+      <section style="background: greenyellow">
+        <p class="heading">Habilidades:</p>
+        <table >
+          <tbody class="card-details_attack" *ngFor="let habilidad of data.data.abilities" >
+          <tr style="background: coral">
+            <td class="attack-name">
+              <span class="title is-4">{{habilidad.name}}</span>
+            </td>
+            <td>
+              <span class="title is-4 is-muted nowrap">DAÑO: {{habilidad.damage}}</span>
+            </td>
+          </tr>
+          <tr style="background: darkkhaki">
+            <td colspan="3">
+              <p> Decripcion del ataque: {{habilidad.text}}</p>
+            </td>
+          </tr>
+          </tbody></table>
+      </section>
+      <section style="background: greenyellow; margin-top: 10px">
+        <div class="card-details_ability">
+          <p class="heading">Reglas</p>
+
+          <p class="is-flex is-flex-direction-column" style="background: coral">
+            {{data.data.rules}}
+          </p>
+        </div>
+      </section>
+      <section style="background: darkkhaki; margin-top: 20px" >
+        <div class="columns is-flex-wrap-wrap is-mobile">
+          <div class="column is-one-third-desktop is-one-third-tablet is-half-mobile">
+            <div class="card-details_weakness">
+              <p class="heading">Debilidades</p>
+              <div *ngFor="let debilidad of data.data.weaknesses" style="background: coral" class=" text-center">
+                <p class="title is-5 ">
+                {{debilidad.type}} - {{debilidad.value}}
+              </p></div>
+
+            </div>
+          </div>
+          <div class="column is-one-third-desktop is-one-third-tablet is-half-mobile">
+            <div class="card-details_resistance">
+              <p class="heading">Resistencia</p>
+              <p class="title is-5" style="background: coral">N/A</p>
+            </div>
+          </div>
+
+          <div class="column is-one-third-desktop is-one-third-tablet is-half-mobile">
+            <div class="card-details_artist">
+              <p class="heading">Artista</p>
+              <p class="title is-5" style="background: coral">{{data.data.artist}}</p>
+            </div>
+          </div>
+          <div class="column is-one-third-desktop is-one-third-tablet is-half-mobile">
+            <div class="card-details_rarity">
+              <p class="heading">Rareza</p>
+              <p class="title is-5" style="background: coral">{{data.data.rarity}}</p>
+            </div>
+          </div>
+          <div class="column is-one-third-desktop is-one-third-tablet is-half-mobile">
+            <div class="card-details_set">
+              <p class="heading">Generación</p>
+              <p class="title is-5" style="background: coral">
+                {{data.data.set.name}}
+                </p>
+            </div>
+          </div>
+          <div class="column is-one-third-desktop is-one-third-tablet is-half-mobile">
+            <div class="card-details_number">
+              <p class="heading">Número de carta</p>
+              <p class="title is-5" style="background: coral">{{data.data.number}} / {{data.data.set.total}}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <button style="margin-top: 30px"> <a routerLink="/home">Volver atrás</a></button>
+</div>

@@ -1,0 +1,11 @@
+
+  <h2 class="text-center"> SELECIONA EL NUMERO DE POKEMONS QUE QUIERES </h2>
+  <div class="text-center"  ><input  [(ngModel)]="numero" type="number">
+    <button (click)="generarAleatorio(numero)" > GENERAR</button></div>
+
+
+<div class="row">
+  <div class="col-sm-2 mb-2 mb-sm-0" *ngFor="let elemento of miarray " >
+    <app-carta elegido="{{elemento}}"></app-carta>
+  </div>
+</div>

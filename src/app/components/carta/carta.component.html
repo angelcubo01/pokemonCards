@@ -1,0 +1,10 @@
+<div class="card" style="width: 18rem;">
+  <img src="{{pokemon.imagen}}" class="card-img-top" alt="{{pokemon.nombre}}">
+  <div class="card-body">
+    <h5 class="card-title">{{pokemon.nombre}}</h5>
+    <div *ngFor="let tipo of pokemon.tipos">
+      <p>{{tipo}}</p>
+    </div>
+    <a routerLink="/detalle/{{elegido}}">Ver todos los datos</a>
+  </div>
+</div>

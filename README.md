@@ -1,27 +1,39 @@
-# PokemonCards
+# PokemonCards ![version](https://img.shields.io/badge/version-1.0-blue)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.4.
+Pequeño proyecto para probar el funcionamiento de Angular mostrando cartas Pokemon
 
-## Development server
+## Finalidad del proyecto 🚀
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Aprender mejor el funcionamiento de Angular, usando una API de cartas pokemon.
 
-## Code scaffolding
+### Pre-requisitos 📋
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+_Para instalar este programa necesitas tener instalado al menos:_
 
-## Build
+Angular 15
+Node JS
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Ejecución 🔧
 
-## Running unit tests
+El sitio web está disponible [aquí](https://angelcubo01.github.io/pokemonCardsHost/home)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Construido con 🛠️
 
-## Running end-to-end tests
+_Estas son las herramientas usadas para el desarrollo_
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* WebStorm - IDE Web
+* Dev Pokemon TGC - [API](https://dev.pokemontcg.io/) para obtener los datos y imagenes de las cartas
 
-## Further help
+## Autores ✒️
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Desarrollado por:
+
+* **Ángel Picado Cuadrado** - [angelcubo01](https://github.com/angelcubo01)
+
+## Licencia 📄
+
+Este proyecto está bajo la Licencia GNU General Public License v3.0 - mira el archivo [GNU General Public License v3.0](https://github.com/angelcubo01/pokemonCards/blob/main/LICENSE) para detalles
+
+## Ayuda
+
+En caso de necesitar más información contactar con [angelcubo01](https://github.com/angelcubo01)
